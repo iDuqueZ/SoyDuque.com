@@ -1,0 +1,63 @@
+.cabecera {
+    width: 100vw;
+    height: 200px;
+    background-color: #121212;
+    color: whitesmoke;
+    
+}
+.page-proyectos {
+    background-color: #121212;
+}
+
+.cabecera h1{
+    margin-top: 0px;
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.wave-p {
+    margin-top: -250px;
+}
+
+.card-l-black {
+    margin-top: 34px;
+    padding: 30px;
+    border: 1px solid #121212;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    font-size: 1em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.card-l-black .btn-mas a{
+    text-decoration: none;
+    color: black;
+}
+
+.card-l-black .btn-mas a:hover{
+    color: #13e6bf;
+}
+
+.card-l-black .btn-mas {
+    justify-self: flex-end;
+}
+
+@media (max-width: 760px) {
+    .wave-p {
+        margin-top: -70px;
+    }
+
+    .cabecera {
+        height: 130px;
+    }
+
+    .card-l-black {
+        width: 80vw;
+        padding: 20px;
+    }
+}

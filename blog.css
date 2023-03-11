@@ -1,0 +1,57 @@
+.page-blog {
+    background-color: #121212;
+}
+
+.cabecera{
+    width: 80%;
+    margin: auto;
+    color: #121212;
+    margin-top: 30px;
+    border-bottom: solid 0.5px #121212;
+}
+
+
+.saludo-b{
+    color: #05947a;
+    font-style: normal;
+}
+
+.conten-blog{
+    width: 70%;
+    min-height: 70vh;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+.card-m {
+    margin-top: 34px;
+    padding: 20px;
+    border: 1px solid #121212;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 1em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #121212;
+}
+
+.card-m a{
+    text-decoration: none;
+    color: #121212;
+}
+
+.card-m:hover {
+    border-color: #05947a;
+    cursor: pointer;
+}
+
+.card-m a:hover {
+    cursor: pointer;
+}
+
+.card-m label{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
