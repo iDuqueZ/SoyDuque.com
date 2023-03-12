@@ -26,6 +26,7 @@ body {
 
 .container {
     width: 80%;
+    max-width: 1440px;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;

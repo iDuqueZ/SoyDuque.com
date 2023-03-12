@@ -40,6 +40,7 @@
         place-content: center;
         align-items: center;
         overflow: hidden;
+        height: 90%;
       }
 
       /* This is just to transition when you change the viewport size. */
@@ -146,8 +147,19 @@
       }
 
       .wave{
-        position: relative;
-        margin-top: -220px;
+        position: absolute;
+        width: 100%;
+        bottom: -20px;
+      }
+
+      @media (min-width: 1900px){
+        .wave {
+          bottom: 0px;
+        }
+
+        .intro {
+          margin-top: 160px !important;
+        }
       }
 
 
@@ -172,6 +184,7 @@
 
     .intro {
         width: 80%;
+        max-width: 1440px;
         margin: auto;
         color: #363636;
         margin-bottom: 220px;
@@ -240,6 +253,7 @@
 
     .services-container{
         width: 90%;
+        max-width: 1440px;
         margin: auto;
         position: relative;
         display: flex;
@@ -396,6 +410,7 @@
 
     footer .container{
       width: 70%;
+      max-width: 1440px;
       margin: auto;
       padding-top: 50px;
       padding-bottom: 50px;

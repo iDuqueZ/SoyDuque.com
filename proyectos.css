@@ -1,12 +1,15 @@
 .cabecera {
     width: 100vw;
-    height: 200px;
     background-color: #121212;
     color: whitesmoke;
-    
+    position: relative;
+    margin-bottom: 60px;
+    height: 30vh;
 }
 .page-proyectos {
     background-color: #121212;
+    position: relative;
+    z-index: 3;
 }
 
 .cabecera h1{
@@ -17,7 +20,10 @@
 }
 
 .wave-p {
-    margin-top: -250px;
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    height: 90%;
 }
 
 .card-l-black {
@@ -26,12 +32,18 @@
     border: 1px solid #121212;
     border-radius: 10px;
     width: 80%;
+    max-width: 1440px;
     margin: auto;
     font-size: 1em;
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+}
+
+.derecha {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 .card-l-black .btn-mas a{
