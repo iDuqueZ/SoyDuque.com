@@ -456,3 +456,25 @@
       color: #13e6bf;
       font-style: normal;
     }
+
+    footer a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .redes-footer li {
+      list-style: none;
+    }
+
+    .redes-footer ul {
+      margin-left: 10px;
+    }
+
+    .services .btn-mas a{
+      text-decoration: none;
+      color: #121212;
+    }
+
+    .services .btn-mas a:hover{
+      color: #13e6bf;
+    }

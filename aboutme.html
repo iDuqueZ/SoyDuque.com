@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="/resources/pj.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
     <link rel="stylesheet" href="aboutme.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
@@ -48,7 +49,7 @@
         </nav>
       </header>
 
-      <div class="perfil">
+      <div class="perfil"  data-aos="fade-down">
         <div class="foto">
           <img width="100px" src="/resources/pj.png" alt="perfil-pj" srcset="">
         </div>
@@ -59,17 +60,17 @@
       </div>
 
       <div class="container">
-        <div class="card-s">
+        <div class="card-s"  data-aos="fade-right">
           <h2>Datos de contacto</h2>
-          <ul>
-            <li>ivandariduque@gmail.com</li>
-            <li>@iDuqueZ</li>
-            <li>@ivandduque</li>
-            <li>ivan-dario-duque-correa</li>
+          <ul class="redes">
+            <li><a href="#"><i class='bx bx-envelope'></i> ivandariduque@gmail.com</a></li>
+            <li><a href="https://github.com/iDuqueZ" target="_blank"><i class='bx bxl-github'></i> @iDuqueZ</a></li>
+            <li><a href="https://www.instagram.com/ivandduque/" target="_blank"><i class='bx bxl-instagram'></i> @ivandduque</a></li>
+            <li><a href="https://www.linkedin.com/in/ivan-dario-duque-correa/" target="_blank"><i class='bx bxl-linkedin' ></i> ivan-dario-duque-correa</a></li>
           </ul>
         </div>
 
-        <div class="card-s">
+        <div class="card-s"  data-aos="fade-left">
           <h2>Intereses</h2>
           <ul>
             <li>Desarrollo de software</li>
@@ -81,7 +82,7 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container"  data-aos="fade-down">
         <div class="card-l">
           <h2>¿Quién soy?</h2>
           <p>Me presento, soy un joven de unos 20 años de edad, a punto de finalizar mis estudios universitarios. Desde siempre, he sido un apasionado de la tecnología, el diseño y el desarrollo web. Aunque me he destacado por mi capacidad de aprendizaje polifacética, ya que no solo me interesa la ingeniería informática, sino que también poseo una gran pasión por el diseño, la filosofía, la psicología y la creación de contenido audiovisual. He tenido la suerte de trabajar en muchos proyectos interesantes y enriquecedores, lo que me ha permitido conocer a gente asombrosa y cumplir muchos de mis sueños. Soy una persona apasionada, con una mente llena de ideas y motivación para competir con el mundo.
@@ -89,9 +90,43 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container"  data-aos="fade-up">
         <div class="btn-mas" data-aos="zoom-out-down"> <a href="/resources/HV-IvanDarioDuque.pdf" download="">Descargar HV</a></div>
       </div>
       </section>
+
+      <footer>
+        <div class="container">
+          <div class="logo-footer" data-aos="fade-down">
+            <img class="logo-img" width="250px" src="/resources/logoverde.png" alt="logo-soyduque-grande" srcset="">
+          </div>
+          <div class="nav-footer" data-aos="fade-down">
+            <h4>Echa un vistazo a:</h4>
+            <ul>
+              <li><a href="/">Inicio</a></li>
+              <li><a href="/aboutme.html">Sobre mí</a></li>
+              <li><a href="/proyectos.html">Proyectos</a></li>
+              <li><a href="/blog.html">Blog</a></li>
+            </ul>
+          </div>
+          <div class="redes-footer" data-aos="fade-down">
+            <h4>Redes</h4>
+            <ul>
+              <li><a href="#"><i class='bx bx-envelope'></i> ivandariduque@gmail.com</a></li>
+              <li><a href="https://github.com/iDuqueZ" target="_blank"><i class='bx bxl-github'></i> @iDuqueZ</a></li>
+              <li><a href="https://www.instagram.com/ivandduque/" target="_blank"><i class='bx bxl-instagram'></i> @ivandduque</a></li>
+              <li><a href="https://www.linkedin.com/in/ivan-dario-duque-correa/" target="_blank"><i class='bx bxl-linkedin' ></i> ivan-dario-duque-correa</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          duration: 1000,
+          once: true
+      });
+    </script>
 </body>
 </html>
