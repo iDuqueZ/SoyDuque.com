@@ -57,3 +57,14 @@
     width: 100%;
     justify-content: flex-end;
 }
+
+@media (max-width: 760px){
+    .card-m{
+        width: 90%;
+        padding: 10px;
+    }
+
+    .cabecera h1{
+        font-size: 1.5em;
+    }
+}

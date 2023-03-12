@@ -61,7 +61,12 @@
 
 @media (max-width: 760px) {
     .wave-p {
-        margin-top: -70px;
+        display: none;
+    }
+
+    .page-proyectos{
+        z-index: auto;
+        position: static;
     }
 
     .cabecera {
