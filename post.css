@@ -43,6 +43,7 @@ article {
 
 .imagen {
     position: relative;
+    display: flex;
 }
 
 @media (max-width: 760px) {
