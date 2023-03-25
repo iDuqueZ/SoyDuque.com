@@ -1,480 +1,483 @@
-
-      *{
-        margin: 0;
-        padding: 0;
-        font-family: Poppins;
-        transition: all 0.5s ease-out;
-      }
-      @keyframes rotate {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
-
-      .gradient {
-      --size: 250px;
-      --speed: 40s;
-      --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
-      width: var(--size);
-      height: var(--size);
-      filter: blur(calc(var(--size) / 5));
-      background-image: linear-gradient(#1b0059, #1FCDAC);
-      animation: rotate var(--speed) var(--easing) alternate infinite;
-      border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
-    }
-
-      @media (min-width: 720px) {
-        .gradient {
-          --size: 500px;
-        }
-      }
-
-      .fondo{
-        background-color: rgb(12, 12, 12);
-        position: absolute;
-        inset: 0;
-        display: flex;
-        place-content: center;
-        align-items: center;
-        overflow: hidden;
-        height: 90%;
-      }
-
-      /* This is just to transition when you change the viewport size. */
-      * {
-        transition: all 0.25s ease-out;
-      }
-
-      .home{
-        position: relative;
-        z-index: 100;
-      }
-
-      header {
-        /* background: linear-gradient(180deg, #121212 0%, rgba(0, 0, 0, 0) 100%); */
-        border: none;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 80%;
-        margin: auto;
-        padding-top: 20px;
-      }
-
-      .logo img{
-        width: 80px;
-      }
-
-      nav a{
-        text-decoration: none;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: rgb(245, 245, 245);
-        padding-left: 20px;
-        padding-right: 20px;
-        position: relative;
-        display: inline-block;
-      }
-
-      nav a:hover {
-        color: white;
-        transform: scale(1.1);
-      }
-
-      .logo{
-        display: inline-block;
-        width: 60px;
-        height: 10px;
-      }
-
-      .toggle-menu {
-        display: none;
-      }
-
-      nav .logo-img{
-        height: 60px;
-        position: absolute;
-        width: 60px;
-        top: -10px;
-      }
-
-      .hero{
-        display: flex;
-        align-items: center;
-        height: 86vh;
-      }
-
-      .encabezado{
-        width: 60%;
-        margin-top: -100px;
-        margin-left: 10%;
-        color: white;
-        z-index: 100;
-        animation-name: aparecer;
-        animation-duration: 0.5s;
-      }
-
-      .encabezado p{
-        margin-top: 30px;
-        color: whitesmoke;
-      }
-
-      .btn-mas {
-        margin-top: 30px;
-        background-color: #1FCDAC;
-        padding: 8px;
-        border-radius: 5px;
-        padding-left: 8px;
-        padding-right: 8px;
-        width: max-content;
-        text-align: center;
-        font-weight: 600;
-        box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-        cursor: pointer;
-        color: #121212;
-        box-sizing: border-box;
-        letter-spacing: 0.3px;
-      }
-
-      .btn-mas:hover{
-        background-color: black;
-        color: #13e6bf;
-        border: 1px solid #13e6bf;
-        /* transform: scale(1.05); */
-      }
-
-      .wave{
-        position: absolute;
-        width: 100%;
-        bottom: -20px;
-      }
-
-      @media (min-width: 1900px){
-        .wave {
-          bottom: 0px;
-        }
-
-        .intro {
-          margin-top: 160px !important;
-        }
-      }
-
-
-      .scroll-container {
-        position: relative;
-      }
-      
-      ::-webkit-scrollbar {
-        width: 5px;
-        background-color: #121212;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 2;
-      }
-      
-      ::-webkit-scrollbar-thumb {
-        background-color: #196191;
-        border-radius: 10px;
-        opacity: 0.5;
-      }
-
-    .intro {
-        width: 80%;
-        max-width: 1440px;
-        margin: auto;
-        color: #363636;
-        margin-bottom: 220px;
-        margin-top: 30px;
-        display: flex;
-        animation-name: aparecer;
-        animation-duration: 0.5s;
-    }
-
-    .intro .texto {
-        width: 62%;
-    }
-
-    .intro .resour{
-        width: 38%;
-    }
-
-    .container-circle {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .resour {
-        position: relative;
-    }
-
-    .resour .circle{
-        width: 80%;
-        margin: auto;
-    }
-
-    .intro h2{
-        margin-bottom: 30px;
-        font-size: 2rem;
-    }
-
-    .intro .texto p{
-        font-size: 1.2rem;
-    }
-
-    .proyectos, .blogs, .sisoy{
-        position: absolute;
-        width: 100px;
-    }
-
-    img.proyectos {
-        top: 0;
-        left: 50px;
-    }
-    
-    img.blogs {
-        bottom: -15px;
-        left: 130px;
-    }
-    
-    img.sisoy {
-        top: 100px;
-        right: 10px;
-    }
-
-
-    .services {
-        background-color: #121212;
-        color: white;
-    }
-
-    .services-container{
-        width: 90%;
-        max-width: 1440px;
-        margin: auto;
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        margin-top: 40px;
-        padding-top: 60px;
-        padding-bottom: 120px;
-        justify-content: space-between;
-    }
-
-    .example  {
-        width: 40%;
-    }
-
-    .example img{
-        width: 600px;
-        position: absolute;
-        top: -90px;
-    }
-
-    .services .text {
-        width: 40%;
-    }
-
-    p{
-      line-height: 28px;
-    }
-
-
-    /* MOBILE */
-
-    @media (max-width: 768px) {
-
-
-      header {
-        flex-wrap: wrap;
-      }
-
-      nav {
-        display: block;
-        position: absolute;
-        width: 100vw;
-        /* margin: 0px; */
-        height: calc(100% - 80px);
-        top: 80px;
-        background-color: #121212e3;
-        z-index: -1;
-        opacity: 0;
-        left: 0;
-        display: flex;
-      }
-      
-      nav div {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        text-align: center;
-        margin: auto;
-        line-height: 4;
-      }
-
-      .wave{
-        display: none;
-      }
-
-      .encabezado {
-        width: 80%;
-      }
-
-      .encabezado h1{
-        font-size: 1.5rem;
-      }
-
-      .encabezado p{
-        font-size: 1rem;
-      }
-
-      .intro {
-        margin-top: 50px;
-        flex-direction: column-reverse;
-        /* width: 90%; */
-      }
-
-      .intro h2 {
-        font-size: 1.5rem;
-      }
-
-      .intro p {
-        font-size: 1rem;
-      }
-
-      .intro .texto {
-        width: 100%;
-      }
-
-      .container-circle{
-        display: none;
-      }
-
-      .resour{
-        margin: auto;
-        margin-bottom: 10px;
-        width: 100% !important;
-        height: 280px;
-      }
-
-      .blogs{
-        left: 50px !important;
-        bottom: 10px !important;
-      }
-
-      .proyectos{
-        left: 20px !important;
-      }
-
-      .sisoy {
-        top: 50px !important;
-      }
-
-      .services-container {
-        flex-direction: column;
-        padding-bottom: 30px;
-      }
-
-      .services-container .text {
-        width: 100%;
-      }
-
-      .example img {
-        width: 90vw;
-        top: -150px;
-      }
-      
-      .example {
-        margin-bottom: 110px;
-      }
-
-      .resour {
-        display: none;
-      }
-
-      .toggle-menu {
-        display: block;
-        color: whitesmoke;
-        font-size: 1.5rem;
-      }
-    }
-
-    footer{
-      background-color: #121212;
-      margin-top: 0px;
-      margin-bottom: 0px;
-    }
-
-    footer .container{
-      width: 70%;
-      max-width: 1440px;
-      margin: auto;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      display: flex;
-      flex-direction: row;
-      color: whitesmoke;
-      justify-content: space-between;
-    }
-
-    @media (max-width: 760px){
-      footer .container{
-        flex-direction: column;
-      }
-
-      .encabezado {
-        margin-top: -50px;
-      }
-
-      footer ul {
-        margin-bottom: 20px;
-      }
-    }
-
-    footer h4 {
-      margin-bottom: 20px;
-
-    }
-
-    .nav-footer a{
-      color: whitesmoke;
-      text-decoration: none;
-    }
-
-    footer ul{
-      margin-left: 30px;
-      font-size: 0.8rem;
-      font-weight: lighter;
-      line-height: 24px;
-    }
-
-
-    .saludo {
-      color: #13e6bf;
-      font-style: normal;
-    }
-
-    footer a {
-      text-decoration: none;
-      color: white;
-    }
-
-    .redes-footer li {
-      list-style: none;
-    }
-
-    .redes-footer ul {
-      margin-left: 10px;
-    }
-
-    .services .btn-mas a{
-      text-decoration: none;
-      color: #121212;
-    }
-
-    .services .btn-mas a:hover{
-      color: #13e6bf;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+  transition: all 0.5s ease-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.gradient {
+  --size: 250px;
+  --speed: 40s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 5));
+  background-image: linear-gradient(#1b0059, #1FCDAC);
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+}
+
+@media (min-width: 720px) {
+  .gradient {
+    --size: 500px;
+  }
+}
+
+.fondo {
+  background-color: rgb(12, 12, 12);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 90%;
+}
+
+/* This is just to transition when you change the viewport size. */
+* {
+  transition: all 0.25s ease-out;
+}
+
+.home {
+  position: relative;
+  z-index: 100;
+}
+
+header {
+  /* background: linear-gradient(180deg, #121212 0%, rgba(0, 0, 0, 0) 100%); */
+  border: none;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.logo img {
+  width: 80px;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(245, 245, 245);
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+nav a:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.logo {
+  display: inline-block;
+  width: 60px;
+  height: 10px;
+}
+
+.toggle-menu {
+  display: none;
+}
+
+nav .logo-img {
+  height: 60px;
+  position: absolute;
+  width: 60px;
+  top: -10px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  height: 86vh;
+}
+
+.encabezado {
+  width: 60%;
+  margin-top: -100px;
+  margin-left: 10%;
+  color: white;
+  z-index: 100;
+  animation-name: aparecer;
+  animation-duration: 0.5s;
+}
+
+.encabezado p {
+  margin-top: 30px;
+  color: whitesmoke;
+}
+
+.btn-mas {
+  margin-top: 30px;
+  background-color: #1FCDAC;
+  padding: 8px;
+  border-radius: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: max-content;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  color: #121212;
+  box-sizing: border-box;
+  letter-spacing: 0.3px;
+}
+
+.btn-mas:hover {
+  background-color: black;
+  color: #13e6bf;
+  border: 1px solid #13e6bf;
+  /* transform: scale(1.05); */
+}
+
+.wave {
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+}
+
+@media (min-width: 1900px) {
+  .wave {
+    bottom: 0px;
+  }
+
+  .intro {
+    margin-top: 160px !important;
+  }
+}
+
+
+.scroll-container {
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #121212;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #196191;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+.intro {
+  width: 80%;
+  max-width: 1440px;
+  margin: auto;
+  color: #363636;
+  margin-bottom: 220px;
+  margin-top: 30px;
+  display: flex;
+  animation-name: aparecer;
+  animation-duration: 0.5s;
+}
+
+.intro .texto {
+  width: 62%;
+}
+
+.intro .resour {
+  width: 38%;
+}
+
+.container-circle {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.resour {
+  position: relative;
+}
+
+.resour .circle {
+  width: 80%;
+  margin: auto;
+}
+
+.intro h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.intro .texto p {
+  font-size: 1.2rem;
+}
+
+.proyectos,
+.blogs,
+.sisoy {
+  position: absolute;
+  width: 100px;
+}
+
+img.proyectos {
+  top: 0;
+  left: 50px;
+}
+
+img.blogs {
+  bottom: -15px;
+  left: 130px;
+}
+
+img.sisoy {
+  top: 100px;
+  right: 10px;
+}
+
+
+.services {
+  background-color: #121212;
+  color: white;
+}
+
+.services-container {
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 120px;
+  justify-content: space-between;
+}
+
+.example {
+  width: 40%;
+}
+
+.example img {
+  width: 600px;
+  position: absolute;
+  top: -90px;
+}
+
+.services .text {
+  width: 40%;
+}
+
+p {
+  line-height: 28px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+
+  header {
+    flex-wrap: wrap;
+  }
+
+  nav {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    /* margin: 0px; */
+    height: calc(100% - 80px);
+    top: 80px;
+    background-color: #121212e3;
+    z-index: -1;
+    opacity: 0;
+    left: 0;
+    display: flex;
+  }
+
+  nav div {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    line-height: 4;
+  }
+
+  .wave {
+    display: none;
+  }
+
+  .encabezado {
+    width: 80%;
+  }
+
+  .encabezado h1 {
+    font-size: 1.5rem;
+  }
+
+  .encabezado p {
+    font-size: 1rem;
+  }
+
+  .intro {
+    margin-top: 50px;
+    flex-direction: column-reverse;
+    /* width: 90%; */
+  }
+
+  .intro h2 {
+    font-size: 1.5rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .intro .texto {
+    width: 100%;
+  }
+
+  .container-circle {
+    display: none;
+  }
+
+  .resour {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 100% !important;
+    height: 280px;
+  }
+
+  .blogs {
+    left: 50px !important;
+    bottom: 10px !important;
+  }
+
+  .proyectos {
+    left: 20px !important;
+  }
+
+  .sisoy {
+    top: 50px !important;
+  }
+
+  .services-container {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  .services-container .text {
+    width: 100%;
+  }
+
+  .example img {
+    width: 90vw;
+    top: -150px;
+  }
+
+  .example {
+    margin-bottom: 110px;
+  }
+
+  .resour {
+    display: none;
+  }
+
+  .toggle-menu {
+    display: block;
+    color: whitesmoke;
+    font-size: 1.5rem;
+  }
+}
+
+footer {
+  background-color: #121212;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+footer .container {
+  width: 70%;
+  max-width: 1440px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  color: whitesmoke;
+  justify-content: space-between;
+}
+
+@media (max-width: 760px) {
+  footer .container {
+    flex-direction: column;
+  }
+
+  .encabezado {
+    margin-top: -50px;
+  }
+
+  footer ul {
+    margin-bottom: 20px;
+  }
+}
+
+footer h4 {
+  margin-bottom: 20px;
+
+}
+
+.nav-footer a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+footer ul {
+  margin-left: 30px;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  line-height: 24px;
+}
+
+
+.saludo {
+  color: #13e6bf;
+  font-style: normal;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.redes-footer li {
+  list-style: none;
+}
+
+.redes-footer ul {
+  margin-left: 10px;
+}
+
+.services .btn-mas a {
+  text-decoration: none;
+  color: #121212;
+}
+
+.services .btn-mas a:hover {
+  color: #13e6bf;
+}

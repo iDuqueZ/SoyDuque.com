@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mi nombre es Iván Dario Duque Correa y SoyDuque.com es mi sitio web creado para compartir mis proyectos, blogs y ofrecer mis servicios como desarrollador. Puedes ver más haciendo scroll o pulsando aquí abajo.">
-    <link rel="shortcut icon" href="/resources/pj.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    <script type="application/ld+json">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Mi nombre es Iván Dario Duque Correa y SoyDuque.com es mi sitio web creado para compartir mis proyectos, blogs y ofrecer mis servicios como desarrollador. Puedes ver más haciendo scroll o pulsando aquí abajo.">
+  <link rel="shortcut icon" href="/resources/pj.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
@@ -26,134 +28,145 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="home.css">
-    <title>Soy Duque</title>
+  <link rel="stylesheet" href="home.css">
+  <title>Soy Duque</title>
 </head>
+
 <body>
- 
+
   <section class="fondo">
     <div class="gradient"></div>
   </section>
 
-    <section class="home">
-      <header>
+  <section class="home">
+    <header>
+      <div>
+        <a class="logo" href="#"> <img class="logo-img" src="resources/logoverde.png" alt="logo-soyduque" srcset=""></a>
+      </div>
+      <div class="toggle-menu" onclick="menu()">
+        <i class='bx bx-menu-alt-right'></i>
+      </div>
+      <nav id="nav">
         <div>
-          <a class="logo" href="#"> <img class="logo-img" src="resources/logoverde.png" alt="logo-soyduque" srcset=""></a>
+          <a href="/">Inicio</a>
+          <a href="/aboutme.html">Sobre mí</a>
+          <a href="/proyectos.html">Proyectos</a>
+          <a href="/blog.html">Blog</a>
         </div>
-        <div class="toggle-menu" onclick="menu()">
-          <i class='bx bx-menu-alt-right'></i>
-        </div>
-        <nav id="nav">
-          <div>
-            <a href="/">Inicio</a>
-            <a href="/aboutme.html">Sobre mí</a>
-            <a href="/proyectos.html">Proyectos</a>
-            <a href="/blog.html">Blog</a>
-          </div>
-        </nav>
-      </header>
+      </nav>
+    </header>
 
-      <div class="hero">
-        <div class="encabezado" data-aos="fade-right">
-          <h1>¡Hola <span class="typed"></span>, <br> gracias por estar aquí!</h1>
-          <p>SoyDuque.com es mi sitio web creado para compartir mis proyectos, blogs y ofrecer mis servicios como desarrollador. Puedes ver más haciendo scroll o pulsando aquí abajo.</p>
-          <div class="btn-mas">Ver más</div>
-        </div>
+    <div class="hero">
+      <div class="encabezado" data-aos="fade-right">
+        <h1>¡Hola <span class="typed"></span>, <br> gracias por estar aquí!</h1>
+        <p>SoyDuque.com es mi sitio web creado para compartir mis proyectos, blogs y ofrecer mis servicios como
+          desarrollador. Puedes ver más haciendo scroll o pulsando aquí abajo.</p>
+        <div class="btn-mas">Ver más</div>
       </div>
-
-      <div class="wave">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#ffff" fill-opacity="1" d="M0,96L48,117.3C96,139,192,181,288,208C384,235,480,245,576,218.7C672,192,768,128,864,128C960,128,1056,192,1152,197.3C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
-      </div>
-    </section>
-  
-    <section class="intro">
-      <div class="texto" data-aos="fade-right">
-        <h2>¿Porqué crear un sitio web?</h2>
-
-        <p>
-          Siempre me pregunté cómo podría mostrar mis proyectos de una manera más personal en internet. Por eso, diseñé este pequeño espacio que puedes encontrar en la infinitud de la red. Aunque sé que existen repositorios famosos como Github, me gusta experimentar con mis conocimientos y ofrecer un toque único en mis trabajos. Aquí podrás encontrar algunos de mis proyectos, así como información sobre mi persona. Además, en mi blog, podrás disfrutar de interesantes artículos que abarcan desde reseñas de películas y series, hasta reflexiones personales sobre anécdotas cotidianas.
-        </p>
-      </div>
-
-      <div class="resour" data-aos="fade-left">
-        
-        <div class="container-circle">
-          <img class="circle" src="/resources/circulo.png" alt="circulo">
-        </div>
-
-        <img class="proyectos" src="/resources/Proyectos.png" alt="proyectos">
-        <img class="blogs" src="/resources/Bolgs.png" alt="blogs" srcset="">
-        <img class="sisoy" src="/resources/Sisoy.png" alt="sisoy" srcset="">
-      </div>
-    </section>
-
-
-    <section class="services">
-      <div class="services-container">
-        <div class="example" data-aos="fade-down">
-          <img src="/resources/mockup.png" alt="mockup"/>
-        </div>
-
-        <div class="text" data-aos="fade-down">
-          <h2>¿Quieres crear una pagina o un sitio web? </h2>
-          <br/>
-          <p>
-            No te preocupes que yo te puedo ayudar, soy un desarrollador que tiene experiencia desde ya
-            algunos años en la planeación, diseño y creación de sitios web, desde landing estáticas para pequeños negocios
-            hasta aplicativos web complejos como PWA, E-commerce, según tus necesidades.
-          </p>
-
-          <div class="btn-mas" data-aos="zoom-out-down"><a href="https://api.whatsapp.com/send?phone=3146010863&text=Hola%20,vi%20tu%20web
-            %20y%20estoy%20interesado/a%20en%20tus%20servicios." target="_blank">Contactamé</a></div>
-        </div>
     </div>
-    </section>
 
-    <footer>
-      <div class="container">
-        <div class="logo-footer" data-aos="fade-down">
-          <img class="logo-img" width="250px" src="/resources/logoverde.png" alt="logo-soyduque-grande" srcset="">
-        </div>
-        <div class="nav-footer" data-aos="fade-down">
-          <h4>Echa un vistazo a:</h4>
-          <ul>
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/aboutme.html">Sobre mí</a></li>
-            <li><a href="/proyectos.html">Proyectos</a></li>
-            <li><a href="/blog.html">Blog</a></li>
-          </ul>
-        </div>
-        <div class="redes-footer" data-aos="fade-down">
-          <h4>Redes</h4>
-          <ul>
-            <li><a href="#"><i class='bx bx-envelope'></i> ivandariduque@gmail.com</a></li>
-            <li><a href="https://github.com/iDuqueZ" target="_blank"><i class='bx bxl-github'></i> @iDuqueZ</a></li>
-            <li><a href="https://www.instagram.com/ivandduque/" target="_blank"><i class='bx bxl-instagram'></i> @ivandduque</a></li>
-            <li><a href="https://www.linkedin.com/in/ivan-dario-duque-correa/" target="_blank"><i class='bx bxl-linkedin' ></i> ivan-dario-duque-correa</a></li>
-          </ul>
-        </div>
+    <div class="wave">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ffff" fill-opacity="1"
+          d="M0,96L48,117.3C96,139,192,181,288,208C384,235,480,245,576,218.7C672,192,768,128,864,128C960,128,1056,192,1152,197.3C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+      </svg>
+    </div>
+  </section>
+
+  <section class="intro">
+    <div class="texto" data-aos="fade-right">
+      <h2>¿Porqué crear un sitio web?</h2>
+
+      <p>
+        Siempre me pregunté cómo podría mostrar mis proyectos de una manera más personal en internet. Por eso, diseñé
+        este pequeño espacio que puedes encontrar en la infinitud de la red. Aunque sé que existen repositorios famosos
+        como Github, me gusta experimentar con mis conocimientos y ofrecer un toque único en mis trabajos. Aquí podrás
+        encontrar algunos de mis proyectos, así como información sobre mi persona. Además, en mi blog, podrás disfrutar
+        de interesantes artículos que abarcan desde reseñas de películas y series, hasta reflexiones personales sobre
+        anécdotas cotidianas.
+      </p>
+    </div>
+
+    <div class="resour" data-aos="fade-left">
+
+      <div class="container-circle">
+        <img class="circle" src="/resources/circulo.png" alt="circulo">
       </div>
-    </footer>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-          duration: 1000,
-          once: true
-      });
+      <img class="proyectos" src="/resources/Proyectos.png" alt="proyectos">
+      <img class="blogs" src="/resources/Bolgs.png" alt="blogs" srcset="">
+      <img class="sisoy" src="/resources/Sisoy.png" alt="sisoy" srcset="">
+    </div>
+  </section>
 
-      const typed = new Typed('.typed', {
+
+  <section class="services">
+    <div class="services-container">
+      <div class="example" data-aos="fade-down">
+        <img src="/resources/mockup.png" alt="mockup" />
+      </div>
+
+      <div class="text" data-aos="fade-down">
+        <h2>¿Quieres crear una pagina o un sitio web? </h2>
+        <br />
+        <p>
+          No te preocupes que yo te puedo ayudar, soy un desarrollador que tiene experiencia desde ya
+          algunos años en la planeación, diseño y creación de sitios web, desde landing estáticas para pequeños negocios
+          hasta aplicativos web complejos como PWA, E-commerce, según tus necesidades.
+        </p>
+
+        <div class="btn-mas" data-aos="zoom-out-down"><a href="https://api.whatsapp.com/send?phone=3146010863&text=Hola%20,vi%20tu%20web
+            %20y%20estoy%20interesado/a%20en%20tus%20servicios." target="_blank">Contactamé</a></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="logo-footer" data-aos="fade-down">
+        <img class="logo-img" width="250px" src="/resources/logoverde.png" alt="logo-soyduque-grande" srcset="">
+      </div>
+      <div class="nav-footer" data-aos="fade-down">
+        <h4>Echa un vistazo a:</h4>
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/aboutme.html">Sobre mí</a></li>
+          <li><a href="/proyectos.html">Proyectos</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="redes-footer" data-aos="fade-down">
+        <h4>Redes</h4>
+        <ul>
+          <li><a href="#"><i class='bx bx-envelope'></i> ivandariduque@gmail.com</a></li>
+          <li><a href="https://github.com/iDuqueZ" target="_blank"><i class='bx bxl-github'></i> @iDuqueZ</a></li>
+          <li><a href="https://www.instagram.com/ivandduque/" target="_blank"><i class='bx bxl-instagram'></i>
+              @ivandduque</a></li>
+          <li><a href="https://www.linkedin.com/in/ivan-dario-duque-correa/" target="_blank"><i
+                class='bx bxl-linkedin'></i> ivan-dario-duque-correa</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+    const typed = new Typed('.typed', {
       strings: [
         '<i class="saludo">amigo</i>',
         '<i class="saludo">amiga</i>',
         '<i class="saludo">amige</i>',
         '<i class="saludo">individuo</i>',
-            '<i class="saludo">persona</i>',
-            '<i class="saludo">robot</i>',
+        '<i class="saludo">persona</i>',
+        '<i class="saludo">robot</i>',
       ],
 
       //stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
@@ -170,7 +183,8 @@
       contentType: 'html', // 'html' o 'null' para texto sin formato
     });
 
-    </script>
-    <script src="script.js"></script>
+  </script>
+  <script src="script.js"></script>
 </body>
+
 </html>

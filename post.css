@@ -1,5 +1,4 @@
-
-.page-post{
+.page-post {
     background-color: #121212;
 }
 
@@ -15,18 +14,18 @@ article {
     text-align: center;
 }
 
-.titulo h1{
+.titulo h1 {
     font-weight: 500;
 }
 
-.frase{
+.frase {
     width: 60%;
     margin: auto;
     margin-top: 60px;
     text-align: center;
 }
 
-.cuerpo{
+.cuerpo {
     width: 70%;
     margin: auto;
     margin-top: 30px;
@@ -34,11 +33,11 @@ article {
     line-height: normal;
 }
 
-.imagen img{
+.imagen img {
     width: 100%;
     object-fit: cover;
     margin-top: 20px;
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .imagen {
@@ -57,5 +56,13 @@ article {
 
     .cuerpo {
         width: 90%;
+    }
+
+    .contenedor-texto-imagen {
+        flex-direction: column;
+    }
+
+    .contenedor-texto-imagen-reverse {
+        flex-direction: column-reverse;
     }
 }

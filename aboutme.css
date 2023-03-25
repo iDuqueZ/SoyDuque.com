@@ -7,7 +7,7 @@ body {
     background-color: #121212;
 }
 
-.perfil{
+.perfil {
     width: 50%;
     margin: auto;
     margin-top: 40px;
@@ -35,7 +35,7 @@ body {
     justify-content: space-between;
 }
 
-.card-s{
+.card-s {
     padding: 30px;
     border: 1px solid whitesmoke;
     border-radius: 10px;
@@ -43,18 +43,19 @@ body {
     font-size: 1em;
 }
 
-.card-s h2, .card-l h2 {
+.card-s h2,
+.card-l h2 {
     font-size: 1.2em;
     margin-bottom: 20px;
 }
 
-.card-s ul{
+.card-s ul {
     margin-left: 40px;
     font-size: 0.8em;
     line-height: 24px;
 }
 
-.card-l{
+.card-l {
     margin-top: 34px;
     padding: 30px;
     border: 1px solid whitesmoke;
@@ -63,27 +64,28 @@ body {
     font-size: 1em;
 }
 
-.card-l p{
+.card-l p {
     font-size: 1em;
 }
 
-@media (max-width: 760px){
+@media (max-width: 760px) {
 
     .perfil {
         width: 70%;
     }
 
-    .container{
+    .container {
         flex-direction: column;
     }
 
-    .card-s, .card-l {
+    .card-s,
+    .card-l {
         width: 80%;
         margin-bottom: 30px;
     }
 }
 
-.btn-mas a{
+.btn-mas a {
     text-decoration: none;
     color: #121212;
 }
@@ -94,7 +96,7 @@ body {
 
 .container .btn-mas a:hover {
     color: #13e6bf;
-} 
+}
 
 
 .card-s .redes {
@@ -102,7 +104,7 @@ body {
     margin-left: 20px;
 }
 
-.card-s .redes a{
+.card-s .redes a {
     text-decoration: none;
     color: white;
 }

@@ -6,13 +6,14 @@
     margin-bottom: 60px;
     height: 30vh;
 }
+
 .page-proyectos {
     background-color: #121212;
     position: relative;
     z-index: 3;
 }
 
-.cabecera h1{
+.cabecera h1 {
     margin-top: 0px;
     width: 80%;
     margin: auto;
@@ -46,12 +47,12 @@
     justify-content: flex-end;
 }
 
-.card-l-black .btn-mas a{
+.card-l-black .btn-mas a {
     text-decoration: none;
     color: black;
 }
 
-.card-l-black .btn-mas a:hover{
+.card-l-black .btn-mas a:hover {
     color: #13e6bf;
 }
 
@@ -64,7 +65,7 @@
         display: none;
     }
 
-    .page-proyectos{
+    .page-proyectos {
         z-index: auto;
         position: static;
     }

@@ -2,7 +2,7 @@
     background-color: #121212;
 }
 
-.cabecera{
+.cabecera {
     width: 80%;
     max-width: 1440px;
     margin: auto;
@@ -12,17 +12,18 @@
 }
 
 
-.saludo-b{
+.saludo-b {
     color: #05947a;
     font-style: normal;
 }
 
-.conten-blog{
+.conten-blog {
     width: 80%;
     margin: auto;
     max-width: 1440px;
     min-height: 70vh;
     margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .card-m {
@@ -38,7 +39,7 @@
     color: #121212;
 }
 
-.card-m a{
+.card-m a {
     text-decoration: none;
     color: #121212;
 }
@@ -52,19 +53,19 @@
     cursor: pointer;
 }
 
-.card-m label{
+.card-m label {
     display: flex;
     width: 100%;
     justify-content: flex-end;
 }
 
-@media (max-width: 760px){
-    .card-m{
+@media (max-width: 760px) {
+    .card-m {
         width: 90%;
         padding: 10px;
     }
 
-    .cabecera h1{
+    .cabecera h1 {
         font-size: 1.5em;
     }
 }

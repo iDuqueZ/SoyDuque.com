@@ -1,7 +1,3 @@
-
-
-
-
 function menu (){
 
     if(document.getElementById("nav").style.opacity == 0){
