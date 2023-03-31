@@ -1,5 +1,6 @@
-function menu (){
+//Función menu nav bar versión mobile
 
+function menu (){
     if(document.getElementById("nav").style.opacity == 0){
         document.getElementById("nav").style.opacity = 1
         document.getElementById("nav").style.zIndex = 300
@@ -7,6 +8,4 @@ function menu (){
         document.getElementById("nav").style.opacity = 0
         document.getElementById("nav").style.zIndex = 0
     }
-    
-    
 }

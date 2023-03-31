@@ -24,9 +24,8 @@
         ]
       }
     </script>
-  <script src="script.js"></script>
-  <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="blog.css">
+  <link rel="stylesheet" href="./styles/home.css">
+  <link rel="stylesheet" href="./styles/blog.css">
   <!-- Agregar dependencias de Slick.js -->
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
@@ -168,9 +167,7 @@
     </div>
   </footer>
 
-
-
-
+  <script src="./scripts/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
     const typed = new Typed('.typed', {
@@ -200,7 +197,7 @@
     // Inicializar carrusel
     $('.carousel').slick({
       dots: true,
-      infinite: true,
+      infinite: false,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
