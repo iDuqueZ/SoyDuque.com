@@ -1,5 +1,7 @@
 .page-blog {
     background-color: #121212;
+    box-shadow: 10px 10px 16px #d5d5d5,
+        -10px -10px 16px #ffffff;
 }
 
 .cabecera {
@@ -11,7 +13,6 @@
     border-bottom: solid 0.5px #121212;
 }
 
-
 .saludo-b {
     color: #05947a;
     font-style: normal;
@@ -22,7 +23,6 @@
     margin: auto;
     max-width: 1440px;
     min-height: 70vh;
-    margin-top: 50px;
     margin-bottom: 100px;
 }
 
@@ -59,10 +59,120 @@
     justify-content: flex-end;
 }
 
+.carousel {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.card-b .card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card-b .card-text {
+    height: calc(100% - 220px);
+    padding: 10px;
+    font-size: 0.7rem;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-text h2 {
+    margin-bottom: 10px;
+}
+
+.card-text p {
+    line-height: 20px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-b {
+    border: 1px solid #121212;
+    border-radius: 10px;
+    height: 380px;
+    width: 320px !important;
+    font-size: 0.8em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #121212;
+}
+
+.card-b a {
+    text-decoration: none;
+    color: #121212;
+}
+
+.card-b:hover {
+    border-color: #05947a;
+    cursor: pointer;
+    background-color: #05947a;
+    color: whitesmoke;
+}
+
+.card-b a:hover {
+    cursor: pointer;
+    color: whitesmoke;
+    transition: none;
+}
+
+.card-b label {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+h3 {
+    font-size: small;
+    color: gray;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.menu-carrusel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;
+}
+
+.prev,
+.next {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.prev:hover,
+.next:hover {
+  color: #dddbdb;
+}
+
 @media (max-width: 760px) {
     .card-m {
         width: 90%;
         padding: 10px;
+    }
+
+    .card-b {
+        width: 98% !important;
+        margin: auto !important;
     }
 
     .cabecera h1 {

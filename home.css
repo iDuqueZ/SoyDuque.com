@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: Poppins;
-  transition: all 0.5s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 @keyframes rotate {
@@ -57,17 +57,17 @@
 header {
   /* background: linear-gradient(180deg, #121212 0%, rgba(0, 0, 0, 0) 100%); */
   border: none;
-  height: 60px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 80%;
   margin: auto;
-  padding-top: 20px;
+  padding: 10px;
 }
 
 .logo img {
-  width: 80px;
+  width: 70px;
 }
 
 nav a {
@@ -78,6 +78,7 @@ nav a {
   padding-right: 20px;
   position: relative;
   display: inline-block;
+  font-size: 0.95rem;
 }
 
 nav a:hover {
@@ -300,8 +301,8 @@ p {
     position: absolute;
     width: 100vw;
     /* margin: 0px; */
-    height: calc(100% - 80px);
-    top: 80px;
+    height: calc(100% - 50px);
+    top: 60px;
     background-color: #121212e3;
     z-index: -1;
     opacity: 0;

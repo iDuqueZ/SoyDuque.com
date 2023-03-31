@@ -8,11 +8,8 @@
   <meta name="description"
     content="En SoyDuque.com encontrarás una variedad de artículos sobre películas, reflexiones, anécdotas, poemas, tecnologías y mucho más. Déjate cautivar por nuestra selección de contenido original y disfruta de una experiencia de lectura única en cada visita. ¡Explora nuestro blog hoy y descubre todo lo que tenemos para ofr">
   <link rel="shortcut icon" href="/resources/pj.png" type="image/png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
   <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -30,6 +27,14 @@
   <script src="script.js"></script>
   <link rel="stylesheet" href="home.css">
   <link rel="stylesheet" href="blog.css">
+  <!-- Agregar dependencias de Slick.js -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <title>SoyDuque | Blog </title>
 </head>
 
@@ -59,36 +64,79 @@
 
 
   <div class="conten-blog">
-    <div class="card-m" category="reflexiones">
-      <a href="/posts/inteliegencia-artficial-en-la-educacion.html">
-        <h2>Educar en la era de la inteligencia artificial: un desafío y una oportunidad</h2>
-        <p>La inteligencia artificial está cambiando la forma en que enseñamos y aprendemos. Reflexionemos sobre las ventajas y desafíos de esta tecnología en la educación.
-        </p>
-        <label><span>27/03/203</span></label>
-      </a>
+    <div class="menu-carrusel">
+      <h3>Recientes</h3>
+      <div class="butons-arrow">
+        <!-- Flechas de navegación del carrusel -->
+        <button type="button" class="prev"><i class='bx bx-chevron-left'></i></button>
+        <button type="button" class="next"><i class='bx bx-chevron-right'></i></button>
+      </div>
     </div>
-    <div class="card-m" category="reflexiones">
-      <a href="/posts/batallas-en-el-transporte-publico.html">
-        <h2>Batalla de animales en el transporte público</h2>
-        <p>Ir en el transporte público de Cali es como hacer un safari urbano para observar el comportamiento de
-          diferentes especies humanas en su hábitat natural.
-        </p>
-        <label><span>21/03/203</span></label>
-      </a>
-    </div>
-    <div class="card-m" category="reflexiones">
-      <a href="/posts/la-productividad-toxica.html">
-        <h2>La Productividad Toxica</h2>
-        <p>Una sociedad que nos juzga y premia maquinas antes que seres humanos</p>
-        <label><span>13/03/203</span></label>
-      </a>
-    </div>
-    <div class="card-m" category="reflexiones">
-      <a href="/posts/la-lucha-entre-la-paz-y-el-deseo.html">
-        <h2>La lucha entre la Paz y el Deseo</h2>
-        <p>Una comparativa reflexiva entre dos cosas que son aparentemente contradictorias</p>
-        <label><span>11/03/203</span></label>
-      </a>
+    <div class="carousel">
+      <div class="card-b" category="reflexiones">
+        <a href="/posts/inteliegencia-artficial-en-la-educacion.html">
+          <div class="card-image">
+            <img src="https://image.lexica.art/full_jpg/5a06964d-7865-480f-9115-e6f92dad2118" alt="Eduacion-IA">
+          </div>
+          <div class="card-text">
+            <div>
+              <h2>Educar en la era de la inteligencia artificial: un desafío y una oportunidad</h2>
+              <p>La inteligencia artificial está cambiando la forma en que enseñamos y aprendemos. Reflexionemos sobre
+                las
+                ventajas y desafíos de...
+              </p>
+            </div>
+            <div>
+              <label><span>27/03/203</span></label>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="card-b" category="reflexiones">
+        <a href="/posts/batallas-en-el-transporte-publico.html">
+          <div class="card-image">
+            <img src="https://image.lexica.art/full_jpg/c5595479-b7b1-4a95-8bd3-992d2ff35e08"
+              alt="https://image.lexica.art/full_jpg/c5595479-b7b1-4a95-8bd3-992d2ff35e08">
+          </div>
+          <div class="card-text">
+            <div>
+              <h2>Batalla de animales en el transporte público</h2>
+              <p>Ir en el transporte público de Cali es como hacer un safari urbano para observar el comportamiento de
+                diferentes especies humanas en su hábitat natural.
+              </p>
+            </div>
+            <div><label><span>21/03/203</span></label></div>
+          </div>
+        </a>
+      </div>
+      <div class="card-b" category="reflexiones">
+        <a href="/posts/la-productividad-toxica.html">
+          <div class="card-image">
+            <img src="https://image.lexica.art/full_jpg/35e45e97-19db-4366-aa2b-dd3b94db7f55" alt="esqueleto-commida">
+          </div>
+          <div class="card-text">
+            <div>
+              <h2>La Productividad Toxica</h2>
+              <p>Una sociedad que nos juzga y premia maquinas antes que seres humanos</p>
+            </div>
+            <div><label><span>13/03/203</span></label></div>
+          </div>
+        </a>
+      </div>
+      <div class="card-b" category="reflexiones">
+        <a href="/posts/la-lucha-entre-la-paz-y-el-deseo.html">
+          <div class="card-image">
+            <img src="https://image.lexica.art/full_jpg/468c50ee-55e8-4550-876e-aca475810a02" alt="capibara-traje">
+          </div>
+          <div class="card-text">
+            <div>
+              <h2>La lucha entre la Paz y el Deseo</h2>
+              <p>Una comparativa reflexiva entre dos cosas que son aparentemente contradictorias</p>
+            </div>
+            <div><label><span>11/03/203</span></label></div>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 
@@ -124,13 +172,7 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-
     const typed = new Typed('.typed', {
       strings: [
         '<i class="saludo-b">mierda</i>',
@@ -155,6 +197,34 @@
       contentType: 'html', // 'html' o 'null' para texto sin formato
     });
 
+    // Inicializar carrusel
+    $('.carousel').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: $('.prev'),
+      nextArrow: $('.next'),
+      autoplay: true,
+      autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
   </script>
   <script src="script.js"></script>
 </body>
