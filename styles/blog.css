@@ -82,6 +82,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: none !important;
 }
 
 .card-text h2 {
@@ -108,11 +109,13 @@
     display: flex;
     flex-direction: column;
     color: #121212;
+    transition: all 0.25 ease-out !important;
 }
 
 .card-b a {
     text-decoration: none;
     color: #121212;
+    transition: none !important;
 }
 
 .card-b:hover {
@@ -125,7 +128,6 @@
 .card-b a:hover {
     cursor: pointer;
     color: whitesmoke;
-    transition: none;
 }
 
 .card-b label {
