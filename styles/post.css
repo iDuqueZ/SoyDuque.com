@@ -46,6 +46,11 @@ article {
 }
 
 @media (max-width: 760px) {
+
+    .imagen img {
+        width: 100% !important;
+    }
+
     article {
         width: 90%;
     }
