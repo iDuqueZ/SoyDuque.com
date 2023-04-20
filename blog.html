@@ -188,6 +188,94 @@
           </div>
         </a>
       </div>
+    
+    </div>
+
+    <br>
+
+    <div class="menu-carrusel">
+      <h3>Destacados</h3>
+      <div class="butons-arrow">
+        <!-- Flechas de navegación del carrusel -->
+        <button type="button" class="prev-d"><i class='bx bx-chevron-left'></i></button>
+        <button type="button" class="next-d"><i class='bx bx-chevron-right'></i></button>
+      </div>
+    </div>
+    <div class="carousel-destacados">
+      <div class="card-b" category="reflexiones">
+        <a href="/posts/la-burbuja-de-las-redes-sociales.html">
+          <div class="card-image">
+            <img src="https://image.lexica.art/full_jpg/ef4994ca-58bc-4208-9016-25e62436f2fa" alt="Burbuja-socialm-media">
+          </div>
+          <div class="card-text">
+            <div>
+              <h2>La Burbuja de las redes sociales</h2>
+              <p>La formación de comunidades en línea basadas en intereses comunes y algoritmos de recomendación que muestran contenido similar al que ya ha sido consumido. Son la receta para la polarización.
+              </p>
+            </div>
+            <div>
+              <label><span>31/03/203</span></label>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card-b" category="reflexiones">
+        <a href="/posts/inteliegencia-artficial-en-la-educacion.html">
+          <div class="card-image">
+            <img src="https://image.lexica.art/full_jpg/5a06964d-7865-480f-9115-e6f92dad2118" alt="Eduacion-IA">
+          </div>
+          <div class="card-text">
+            <div>
+              <h2>Educar en la era de la inteligencia artificial: un desafío y una oportunidad</h2>
+              <p>La inteligencia artificial está cambiando la forma en que enseñamos y aprendemos. Reflexionemos sobre
+                las
+                ventajas y desafíos de...
+              </p>
+            </div>
+            <div>
+              <label><span>27/03/203</span></label>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card-b" category="reflexiones">
+        <a href="/posts/universidades-vs-academias-virtuales.html">
+          <div class="card-image">
+            <img src="https://image.lexica.art/full_jpg/a1d5811c-4a2d-4c33-bab9-2f8f7df50c8d" alt="estudiante-clase-virtual">
+          </div>
+          <div class="card-text">
+            <div>
+              <h2>¿Por qué un curso online es más rentable que una clase virtual en una universidad?</h2>
+              <p>Es importante que las universidades y colegios no se limiten a implementar la videoconferencia como única forma de enseñanza virtual...
+              </p>
+            </div>
+            <div>
+              <label><span>14/04/2023</span></label>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      
+      <div class="card-b" category="reflexiones">
+        <a href="/posts/batallas-en-el-transporte-publico.html">
+          <div class="card-image">
+            <img src="https://image.lexica.art/full_jpg/c5595479-b7b1-4a95-8bd3-992d2ff35e08"
+              alt="https://image.lexica.art/full_jpg/c5595479-b7b1-4a95-8bd3-992d2ff35e08">
+          </div>
+          <div class="card-text">
+            <div>
+              <h2>Batalla de animales en el transporte público</h2>
+              <p>Ir en el transporte público de Cali es como hacer un safari urbano para observar el comportamiento de
+                diferentes especies humanas en su hábitat natural.
+              </p>
+            </div>
+            <div><label><span>21/03/203</span></label></div>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 
@@ -246,7 +334,7 @@
       contentType: 'html', // 'html' o 'null' para texto sin formato
     });
 
-    // Inicializar carrusel
+    // Inicializar carrusel recientes
     $('.carousel').slick({
       dots: false,
       infinite: true,
@@ -256,6 +344,43 @@
       lazyLoad: 'ondemand',
       prevArrow: $('.prev'),
       nextArrow: $('.next'),
+      autoplay: true,
+      autoplaySpeed: 8000,
+      responsive: [
+        {
+          breakpoint: 1020,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+
+    // Inicializar carrusel Destacados
+    $('.carousel-destacados').slick({
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      lazyLoad: 'ondemand',
+      prevArrow: $('.prev-d'),
+      nextArrow: $('.next-d'),
       autoplay: true,
       autoplaySpeed: 8000,
       responsive: [

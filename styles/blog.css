@@ -166,6 +166,19 @@ h3 {
   color: #dddbdb;
 }
 
+.prev-d,
+.next-d {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.prev-d:hover,
+.next-d:hover {
+  color: #dddbdb;
+}
+
 @media (max-width: 760px) {
     .card-m {
         width: 90%;
