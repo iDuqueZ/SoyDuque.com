@@ -75,7 +75,7 @@
 }
 
 .card-b .card-text {
-    height: calc(100% - 220px);
+    height: 100%;
     padding: 10px;
     font-size: 0.7rem;
     line-height: 20px;
@@ -102,7 +102,7 @@
 .card-b {
     border: 1px solid #121212;
     border-radius: 10px;
-    height: 380px;
+    height: 200px;
     width: 320px !important;
     font-size: 0.8em;
     position: relative;
@@ -135,6 +135,7 @@
     width: 100%;
     justify-content: flex-end;
     align-items: flex-end;
+    margin-bottom: 20px;
 }
 
 h3 {
