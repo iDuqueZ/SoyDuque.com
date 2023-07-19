@@ -1,10 +1,9 @@
 .cabecera {
-    width: 100vw;
     background-color: #121212;
     color: whitesmoke;
     position: relative;
-    margin-bottom: 60px;
-    height: 30vh;
+    margin-bottom: 20px;
+    height: 10vh;
 }
 
 .page-proyectos {
@@ -17,7 +16,7 @@
     margin-top: 0px;
     width: 80%;
     margin: auto;
-    padding-top: 40px;
+    padding-top: 10px;
 }
 
 .wave-p {
@@ -28,7 +27,7 @@
 }
 
 .card-l-black {
-    margin-top: 34px;
+    margin-top: 20px;
     padding: 30px;
     border: 1px solid #121212;
     border-radius: 10px;
@@ -38,13 +37,11 @@
     font-size: 1em;
     position: relative;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
 
 .derecha {
     display: flex;
-    width: 100%;
-    justify-content: flex-end;
 }
 
 .card-l-black .btn-mas a {
@@ -75,7 +72,107 @@
     }
 
     .card-l-black {
-        width: 80vw;
+        flex-direction: column;
+        width: 80%;
         padding: 20px;
     }
+
+    .content {
+        flex-direction: column;
+        width: 90% !important;
+        margin: auto;
+        /* padding: 20px; */
+    }
+
+    .content div h2 {
+        margin-top: 20px;
+    }
+
+    .content .card-b {
+        width: 100% !important;
+        margin: auto;
+    }
+
+    .content .fila {
+        flex-direction: column !important;
+        margin-bottom: 0px !important;
+    }
+
+    .content .fila div{
+        margin-bottom: 20px;
+    }
+}
+
+.card-b .card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card-b .card-text {
+    height: 100%;
+    padding: 10px;
+    font-size: 0.7rem;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: none !important;
+}
+
+.card-b {
+    border: 1px solid #121212;
+    border-radius: 10px;
+    height: 200px;
+    width: 350px ;
+    font-size: 0.8em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #121212;
+    transition: all 0.25 ease-out !important;
+}
+
+.card-b a {
+    text-decoration: none;
+    color: #121212;
+    transition: none !important;
+}
+
+.card-b:hover {
+    border-color: #05947a;
+    cursor: pointer;
+    background-color: #05947a;
+    color: whitesmoke;
+}
+
+.card-b a:hover {
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.card-b label {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+
+.content {
+    width: calc(80% + 60px);
+    margin: auto;
+    margin-top: 40px;
+}
+
+.content h2{
+    margin-bottom: 20px;
+}
+
+.card-text p {
+    line-height: 20px;
 }
