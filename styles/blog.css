@@ -23,7 +23,7 @@
     margin: auto;
     max-width: 1440px;
     min-height: 70vh;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 
 .card-m {
@@ -103,7 +103,7 @@
     border: 1px solid #121212;
     border-radius: 10px;
     height: 200px;
-    width: 320px !important;
+    width: 90% !important;
     font-size: 0.8em;
     position: relative;
     display: flex;
