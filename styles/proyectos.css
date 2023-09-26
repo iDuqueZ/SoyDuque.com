@@ -167,6 +167,7 @@
     width: calc(80% + 60px);
     margin: auto;
     margin-top: 40px;
+    max-width: 1240px;
 }
 
 .content h2{
