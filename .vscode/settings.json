@@ -1,3 +1,9 @@
 {
-    "cSpell.language": "en,es-ES"
+    "cSpell.language": "en,es-ES",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#0E323A",
+        "titleBar.activeBackground": "#134651",
+        "titleBar.activeForeground": "#F4FBFC"
+    },
+    "liveServer.settings.port": 5501
 }
